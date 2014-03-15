@@ -11,6 +11,14 @@
 		CF13093818D47A0E0085D09A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9BF56518D4795B007CBF68 /* AppDelegate.m */; };
 		CF13093918D47A100085D09A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9BF56118D4795B007CBF68 /* main.m */; };
 		CF13093B18D47A340085D09A /* Root.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF13093A18D47A340085D09A /* Root.xib */; };
+		CF13094118D47B220085D09A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9BF55518D4795B007CBF68 /* Foundation.framework */; };
+		CF13094218D47B220085D09A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9BF55718D4795B007CBF68 /* CoreGraphics.framework */; };
+		CF13094318D47B220085D09A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9BF55918D4795B007CBF68 /* UIKit.framework */; };
+		CF13094918D47B220085D09A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF13094718D47B220085D09A /* InfoPlist.strings */; };
+		CF33D80518D47B4F00FA5756 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9BF56718D4795B007CBF68 /* Images.xcassets */; };
+		CF33D80618D47B5300FA5756 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9BF56518D4795B007CBF68 /* AppDelegate.m */; };
+		CF33D80718D47B5400FA5756 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9BF56118D4795B007CBF68 /* main.m */; };
+		CF33D80D18D47C0A00FA5756 /* Root in Nav.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF33D80C18D47C0A00FA5756 /* Root in Nav.xib */; };
 		CF9BF58718D479B5007CBF68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9BF55518D4795B007CBF68 /* Foundation.framework */; };
 		CF9BF58818D479B5007CBF68 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9BF55718D4795B007CBF68 /* CoreGraphics.framework */; };
 		CF9BF58918D479B5007CBF68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9BF55918D4795B007CBF68 /* UIKit.framework */; };
@@ -19,6 +27,11 @@
 
 /* Begin PBXFileReference section */
 		CF13093A18D47A340085D09A /* Root.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Root.xib; sourceTree = "<group>"; };
+		CF13094018D47B220085D09A /* Root in Nav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Root in Nav.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF13094618D47B220085D09A /* Root in Nav-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Root in Nav-Info.plist"; sourceTree = "<group>"; };
+		CF13094818D47B220085D09A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF13094C18D47B220085D09A /* Root in Nav-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Root in Nav-Prefix.pch"; sourceTree = "<group>"; };
+		CF33D80C18D47C0A00FA5756 /* Root in Nav.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "Root in Nav.xib"; path = "Root in Nav/Root in Nav.xib"; sourceTree = SOURCE_ROOT; };
 		CF9BF55518D4795B007CBF68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CF9BF55718D4795B007CBF68 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CF9BF55918D4795B007CBF68 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -34,6 +47,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CF13093D18D47B220085D09A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF13094218D47B220085D09A /* CoreGraphics.framework in Frameworks */,
+				CF13094318D47B220085D09A /* UIKit.framework in Frameworks */,
+				CF13094118D47B220085D09A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF9BF58318D479B5007CBF68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,11 +70,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF13094418D47B220085D09A /* Root in Nav */ = {
+			isa = PBXGroup;
+			children = (
+				CF33D80C18D47C0A00FA5756 /* Root in Nav.xib */,
+				CF13094518D47B220085D09A /* Supporting Files */,
+			);
+			path = "Root in Nav";
+			sourceTree = "<group>";
+		};
+		CF13094518D47B220085D09A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF13094618D47B220085D09A /* Root in Nav-Info.plist */,
+				CF13094718D47B220085D09A /* InfoPlist.strings */,
+				CF13094C18D47B220085D09A /* Root in Nav-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		CF1FDF4818D474EE0076D40B = {
 			isa = PBXGroup;
 			children = (
 				CF9BF55B18D4795B007CBF68 /* Auto-Layout Issues (Shared Files) */,
 				CF9BF58A18D479B5007CBF68 /* Root */,
+				CF13094418D47B220085D09A /* Root in Nav */,
 				CF9BF55418D4795B007CBF68 /* Frameworks */,
 				CF9BF55318D4795A007CBF68 /* Products */,
 			);
@@ -61,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				CF9BF58618D479B5007CBF68 /* Root.app */,
+				CF13094018D47B220085D09A /* Root in Nav.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +161,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CF13093F18D47B220085D09A /* Root in Nav */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF13096418D47B230085D09A /* Build configuration list for PBXNativeTarget "Root in Nav" */;
+			buildPhases = (
+				CF13093C18D47B220085D09A /* Sources */,
+				CF13093D18D47B220085D09A /* Frameworks */,
+				CF13093E18D47B220085D09A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Root in Nav";
+			productName = "Root in Nav";
+			productReference = CF13094018D47B220085D09A /* Root in Nav.app */;
+			productType = "com.apple.product-type.application";
+		};
 		CF9BF58518D479B5007CBF68 /* Root */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF9BF5AA18D479B5007CBF68 /* Build configuration list for PBXNativeTarget "Root" */;
@@ -155,11 +216,22 @@
 			projectRoot = "";
 			targets = (
 				CF9BF58518D479B5007CBF68 /* Root */,
+				CF13093F18D47B220085D09A /* Root in Nav */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CF13093E18D47B220085D09A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF13094918D47B220085D09A /* InfoPlist.strings in Resources */,
+				CF33D80D18D47C0A00FA5756 /* Root in Nav.xib in Resources */,
+				CF33D80518D47B4F00FA5756 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF9BF58418D479B5007CBF68 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +245,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CF13093C18D47B220085D09A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF33D80618D47B5300FA5756 /* AppDelegate.m in Sources */,
+				CF33D80718D47B5400FA5756 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF9BF58218D479B5007CBF68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,6 +266,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		CF13094718D47B220085D09A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF13094818D47B220085D09A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		CF9BF58D18D479B5007CBF68 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -196,6 +285,98 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CF13096518D47B230085D09A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Root in Nav/Root in Nav-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Root in Nav/Root in Nav-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CF13096618D47B230085D09A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Root in Nav/Root in Nav-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Root in Nav/Root in Nav-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		CF1FDF4D18D474EE0076D40B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -303,6 +484,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CF13096418D47B230085D09A /* Build configuration list for PBXNativeTarget "Root in Nav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF13096518D47B230085D09A /* Debug */,
+				CF13096618D47B230085D09A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CF1FDF4C18D474EE0076D40B /* Build configuration list for PBXProject "Auto-Layout Issues" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
