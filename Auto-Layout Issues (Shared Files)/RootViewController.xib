@@ -14,15 +14,39 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Top Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5B-qP-qt7">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5B-qP-qt7">
                     <rect key="frame" x="123" y="79" width="75" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bottom Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wol-iM-36j">
+                    <rect key="frame" x="108" y="447" width="104" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lng-hG-1e3">
+                    <rect key="frame" x="20" y="108" width="280" height="331"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0039215686269999999" green="0.19215686269999999" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="JLv-dh-k7C"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="ZEw-bU-TL9"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wol-iM-36j" secondAttribute="bottom" constant="100" id="NqR-9Q-HtP"/>
+                <constraint firstItem="Lng-hG-1e3" firstAttribute="centerX" secondItem="r5B-qP-qt7" secondAttribute="centerX" id="QXw-g8-Yh6"/>
+                <constraint firstItem="wol-iM-36j" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Vvm-E9-CEh"/>
+                <constraint firstItem="wol-iM-36j" firstAttribute="top" secondItem="Lng-hG-1e3" secondAttribute="bottom" constant="8" symbolic="YES" id="icL-gG-kd0"/>
+                <constraint firstItem="Lng-hG-1e3" firstAttribute="centerX" secondItem="wol-iM-36j" secondAttribute="centerX" id="qTZ-E5-jKI"/>
+                <constraint firstItem="Lng-hG-1e3" firstAttribute="top" secondItem="r5B-qP-qt7" secondAttribute="bottom" constant="8" symbolic="YES" id="urD-b8-YkR"/>
+                <constraint firstItem="Lng-hG-1e3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="108" id="zmM-T5-hTZ"/>
+            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>

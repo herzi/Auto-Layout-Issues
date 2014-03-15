@@ -8,7 +8,27 @@
 
 #import "RootViewController.h"
 
+typedef enum {
+    Strategy_AutoresizingMask,
+    Strategy_BottomConstraint
+} Strategy;
+
+#define STRATEGY_DEFAULT Strategy_BottomConstraint
+
+/* Strategy_AutoResizingMask:
+ * My own solution. Update the autoresisingMask and let iOS do the rest for you.
+ * (only works within UINavigationController)
+ */
+
+/* Strategy_BottomConstraint:
+ * Solution from CEarwood @ http://stackoverflow.com/a/16547378/418244
+ * (only works within UINavigationController)
+ */
+
 @interface RootViewController ()
+
+@property IBOutlet NSLayoutConstraint* bottomConstraint;
+@property Strategy strategy;
 
 @end
 
@@ -18,7 +38,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.strategy = STRATEGY_DEFAULT;
     }
     return self;
 }
@@ -26,7 +46,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    NSNotificationCenter* center = [NSNotificationCenter defaultCenter];
+
+    switch (_strategy) {
+        case Strategy_AutoresizingMask:
+            self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth + UIViewAutoresizingFlexibleTopMargin;
+            break;
+            
+        case Strategy_BottomConstraint:
+            // maybe think about using -viewDidAppear:/viewDidDisappear for adding/removing observers
+            [center addObserverForName:UIApplicationWillChangeStatusBarFrameNotification
+                                object:nil
+                                 queue:nil
+                            usingBlock:^(NSNotification *note) {
+                                CGRect statusBarFrame = [note.userInfo[UIApplicationStatusBarFrameUserInfoKey] CGRectValue];
+                                self.bottomConstraint.constant = statusBarFrame.size.height + 100;
+                                [self.view setNeedsLayout];
+                            }];
+            [center addObserverForName:UIApplicationDidChangeStatusBarFrameNotification
+                                object:nil
+                                 queue:nil
+                            usingBlock:^(NSNotification *note) {
+                                self.bottomConstraint.constant = 100;
+                                [self.view setNeedsLayout];
+                            }];
+            break;
+    }
 }
 
 - (void)didReceiveMemoryWarning
