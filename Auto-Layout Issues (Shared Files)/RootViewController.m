@@ -9,11 +9,17 @@
 #import "RootViewController.h"
 
 typedef enum {
+    Strategy_None,
     Strategy_AutoresizingMask,
     Strategy_BottomConstraint
+    // feel free to fork this repository and add your own strategy
 } Strategy;
 
 #define STRATEGY_DEFAULT Strategy_BottomConstraint
+
+/* Strategy_None:
+ * No attempt to change anything, does not work anywhere.
+ */
 
 /* Strategy_AutoResizingMask:
  * My own solution. Update the autoresisingMask and let iOS do the rest for you.
@@ -50,6 +56,9 @@ typedef enum {
     NSNotificationCenter* center = [NSNotificationCenter defaultCenter];
 
     switch (_strategy) {
+        case Strategy_None:
+            break;
+            
         case Strategy_AutoresizingMask:
             self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth + UIViewAutoresizingFlexibleTopMargin;
             break;
