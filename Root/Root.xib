@@ -25,7 +25,7 @@
                 <outlet property="rootViewController" destination="MB7-u6-qwU" id="YbA-Yb-W0b"/>
             </connections>
         </window>
-        <viewController id="MB7-u6-qwU">
+        <viewController id="MB7-u6-qwU" customClass="RootViewController">
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>

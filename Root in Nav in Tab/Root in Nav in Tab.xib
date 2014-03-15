@@ -48,7 +48,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <viewControllers>
-                        <viewController id="Gai-vz-Zv9">
+                        <viewController id="Gai-vz-Zv9" customClass="RootViewController">
                             <navigationItem key="navigationItem" title="Root View Controller" id="3v4-SR-6t2"/>
                             <nil key="simulatedStatusBarMetrics"/>
                             <nil key="simulatedTopBarMetrics"/>

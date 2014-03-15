@@ -39,6 +39,14 @@
 		CFC9DBEB18D47DF20094D745 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9BF56518D4795B007CBF68 /* AppDelegate.m */; };
 		CFC9DBEC18D47E080094D745 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9BF56718D4795B007CBF68 /* Images.xcassets */; };
 		CFC9DBEE18D47E270094D745 /* Root in Nav in Tab.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC9DBED18D47E270094D745 /* Root in Nav in Tab.xib */; };
+		CFC9DBF218D47FB20094D745 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC9DBF018D47FB20094D745 /* RootViewController.m */; };
+		CFC9DBF318D47FB20094D745 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC9DBF018D47FB20094D745 /* RootViewController.m */; };
+		CFC9DBF418D47FB20094D745 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC9DBF018D47FB20094D745 /* RootViewController.m */; };
+		CFC9DBF518D47FB20094D745 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC9DBF018D47FB20094D745 /* RootViewController.m */; };
+		CFC9DBF618D47FB20094D745 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC9DBF118D47FB20094D745 /* RootViewController.xib */; };
+		CFC9DBF718D47FB20094D745 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC9DBF118D47FB20094D745 /* RootViewController.xib */; };
+		CFC9DBF818D47FB20094D745 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC9DBF118D47FB20094D745 /* RootViewController.xib */; };
+		CFC9DBF918D47FB20094D745 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC9DBF118D47FB20094D745 /* RootViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +78,9 @@
 		CFC9DBC818D47DBB0094D745 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CFC9DBCC18D47DBB0094D745 /* Root in Nav in Tab-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Root in Nav in Tab-Prefix.pch"; sourceTree = "<group>"; };
 		CFC9DBED18D47E270094D745 /* Root in Nav in Tab.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Root in Nav in Tab.xib"; sourceTree = "<group>"; };
+		CFC9DBEF18D47FB20094D745 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		CFC9DBF018D47FB20094D745 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		CFC9DBF118D47FB20094D745 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +205,9 @@
 			children = (
 				CF9BF56418D4795B007CBF68 /* AppDelegate.h */,
 				CF9BF56518D4795B007CBF68 /* AppDelegate.m */,
+				CFC9DBEF18D47FB20094D745 /* RootViewController.h */,
+				CFC9DBF018D47FB20094D745 /* RootViewController.m */,
+				CFC9DBF118D47FB20094D745 /* RootViewController.xib */,
 				CF9BF56718D4795B007CBF68 /* Images.xcassets */,
 				CF9BF55C18D4795B007CBF68 /* Supporting Files */,
 			);
@@ -352,6 +366,7 @@
 			files = (
 				CF13094918D47B220085D09A /* InfoPlist.strings in Resources */,
 				CF33D80D18D47C0A00FA5756 /* Root in Nav.xib in Resources */,
+				CFC9DBF718D47FB20094D745 /* RootViewController.xib in Resources */,
 				CF33D80518D47B4F00FA5756 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +377,7 @@
 			files = (
 				CF33D84918D47C7B00FA5756 /* InfoPlist.strings in Resources */,
 				CF439E3118D47D20006DDD77 /* Root in Tab.xib in Resources */,
+				CFC9DBF818D47FB20094D745 /* RootViewController.xib in Resources */,
 				CF439E2F18D47CD5006DDD77 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +388,7 @@
 			files = (
 				CF9BF58F18D479B5007CBF68 /* InfoPlist.strings in Resources */,
 				CF13093B18D47A340085D09A /* Root.xib in Resources */,
+				CFC9DBF618D47FB20094D745 /* RootViewController.xib in Resources */,
 				CF13093718D47A0B0085D09A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +399,7 @@
 			files = (
 				CFC9DBC918D47DBB0094D745 /* InfoPlist.strings in Resources */,
 				CFC9DBEE18D47E270094D745 /* Root in Nav in Tab.xib in Resources */,
+				CFC9DBF918D47FB20094D745 /* RootViewController.xib in Resources */,
 				CFC9DBEC18D47E080094D745 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +413,7 @@
 			files = (
 				CF33D80618D47B5300FA5756 /* AppDelegate.m in Sources */,
 				CF33D80718D47B5400FA5756 /* main.m in Sources */,
+				CFC9DBF318D47FB20094D745 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +423,7 @@
 			files = (
 				CF439E2E18D47CB2006DDD77 /* main.m in Sources */,
 				CF439E2D18D47CAE006DDD77 /* AppDelegate.m in Sources */,
+				CFC9DBF418D47FB20094D745 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +433,7 @@
 			files = (
 				CF13093818D47A0E0085D09A /* AppDelegate.m in Sources */,
 				CF13093918D47A100085D09A /* main.m in Sources */,
+				CFC9DBF218D47FB20094D745 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +443,7 @@
 			files = (
 				CFC9DBEA18D47DF00094D745 /* main.m in Sources */,
 				CFC9DBEB18D47DF20094D745 /* AppDelegate.m in Sources */,
+				CFC9DBF518D47FB20094D745 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

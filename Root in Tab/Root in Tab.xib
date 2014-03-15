@@ -28,25 +28,17 @@
         <tabBarController definesPresentationContext="YES" id="8IK-93-Hg8">
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
-            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <tabBar key="tabBar" contentMode="scaleToFill" selectedItem="NWr-UX-NIb" id="4Aj-2J-4N0">
+            <tabBar key="tabBar" contentMode="scaleToFill" id="4Aj-2J-4N0">
                 <rect key="frame" x="0.0" y="519" width="320" height="49"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </tabBar>
             <viewControllers>
-                <viewController id="CuI-n2-ZIb">
+                <viewController id="CuI-n2-ZIb" customClass="RootViewController">
                     <tabBarItem key="tabBarItem" title="Item 1" id="NWr-UX-NIb"/>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <nil key="simulatedDestinationMetrics"/>
-                </viewController>
-                <viewController id="vr8-N8-Ccb">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="gLP-pc-fP4"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>

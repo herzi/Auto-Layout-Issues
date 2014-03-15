@@ -35,7 +35,7 @@
                 <autoresizingMask key="autoresizingMask"/>
             </navigationBar>
             <viewControllers>
-                <viewController id="Ce5-g0-pti">
+                <viewController id="Ce5-g0-pti" customClass="RootViewController">
                     <navigationItem key="navigationItem" title="Root View Controller" id="dGi-jE-S3Q"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
